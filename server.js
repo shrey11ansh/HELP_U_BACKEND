@@ -9,7 +9,7 @@ const CONNECTION_URL="mongodb+srv://shreyansh:M10P20d9b16@cluster0.zmehw0l.mongo
 const PORT = process.env.PORT|| 5000;
 
 mongoose.connect(CONNECTION_URL)
-  .then(() => app.listen(PORT, () => console.log(`Server Running on Port: http://localhost:${PORT}`)))
+  .then(() => app.listen(PORT, () => console.log(`Server Running on Port: ${PORT}`)))
   .catch((error) => console.log(`${error} did not connect`));
 
 
